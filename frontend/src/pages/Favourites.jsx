@@ -1,9 +1,10 @@
 import "../css/Favorites.css"
+
 function Favourite(){
     return (
-        <div className="favorites-info">
+        <div className="favorites-empty">
             <h2>No Favorites Events Yet</h2>
-            <h>Start adding events to your favorites and they will appear here!</h>
+            <p>Start adding events to your favorites and they will appear here!</p>
         </div>
     )
 }

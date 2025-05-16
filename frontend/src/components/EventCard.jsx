@@ -1,4 +1,4 @@
-import "../css/MovieCard.css"
+import "../css/EventCard.css"
 
 function EventCard({event}){
 

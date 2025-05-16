@@ -25,10 +25,10 @@
 
 .search-input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px #666;
+  box-shadow: 0 0 0 2px #a15252;
 }
 
-.search-button {
+.search-btn {
   padding: 0.75rem 1.5rem;
   background-color: #e50914;
   color: white;
@@ -38,7 +38,7 @@
   white-space: nowrap;
 }
 
-.search-button:hover {
+.search-btn:hover {
   background-color: #f40612;
 }
 
@@ -53,7 +53,7 @@
   }
 }
 
-.movies-grid {
+.events-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
