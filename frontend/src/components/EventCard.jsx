@@ -1,3 +1,5 @@
+import "../css/MovieCard.css"
+
 function EventCard({event}){
 
     function onBookNowClick(){

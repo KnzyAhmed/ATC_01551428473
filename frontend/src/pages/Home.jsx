@@ -1,4 +1,5 @@
 import EventCard from "../components/EventCard";
+import "../css/Home.css"
 import { useState } from "react";
 
 function Home(){
