@@ -1,24 +1,17 @@
 import "../css/EventCard.css"
 
-function EventCard({event}){
+function EventCard({event, onBookNowClick }){
 
-    function onBookNowClick(){
-        alert("clicked")
-    }
-
-    return <div className="event-card">
-        <div className="event-poster"> </div>
-            <img src={event.url} alt={event.title}/>
-            <div className="booking">
-                <button className="book-now-btn" onClick={onBookNowClick}>
-                    📓
-                </button>
-            </div>
-            <div className="event-info">
-                <h3>{event.name}</h3>
-                <p>{event.date}</p>
-            </div>
+    return (
+    <div className="event-card">
+        {event.image && <img src={event.image} alt={event.event_name} />}
+        <h3>{event.event_name}</h3>
+        <p>{new Date(event.date).toLocaleDateString()}</p>
+        <button className="book-now-btn" onClick={onBookNowClick} disabled={event.is_booked} >
+        {event.is_booked ? "Booked" : "Book now! 📓"}
+        </button>        
     </div>
+    );
 }
 
 export default EventCard
